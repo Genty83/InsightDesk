@@ -7,18 +7,43 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Dependency directories
+node_modules/
+.pnpm/
+.packages/
+
+# Build output
+dist/
+dist-ssr/
 *.local
 
-# Editor directories and files
-.vscode/*
+# Environment files
+.env
+.env.*.local
+
+# Editor settings
+.vscode/
 !.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# OS-generated
+.DS_Store
+Thumbs.db
+
+# Electron
+/out/
+electron-builder-debug/
+*.unpacked/
+*.asar
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Typescript
+*.tsbuildinfo
