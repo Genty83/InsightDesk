@@ -1,15 +1,14 @@
 
+import { ConfigProvider } from 'antd';
+import MainLayout from './components/layout/MainLayout';
+import { darkTheme } from './config/theme';
 
 function App() {
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Welcome to My React App</h1>
-        <p>This is a simple React application.</p>
-      </header>
-    </div>
-  )
+    <ConfigProvider theme={darkTheme}>
+      <MainLayout />
+    </ConfigProvider>
+  );
 }
 
-export default App
+export default App;

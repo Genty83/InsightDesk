@@ -3,7 +3,7 @@ import type { ThemeConfig } from 'antd';
 const sharedTokens = {
   token: {
     fontSize: 12,
-    borderRadius: 6,
+    borderRadius: 8,
 
     // Spacing scale
     sizeUnit: 4,
